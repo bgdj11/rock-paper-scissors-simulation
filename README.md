@@ -17,6 +17,7 @@ By creating this Rock Paper Scissors simulation, I sought to gain practical expe
 - `rock.png`: Image file for representing a rock object.
 - `paper.png`: Image file for representing a paper object.
 - `scissors.png`: Image file for representing a scissors object.
+- `game.py`: Source code of game.
 - `README.md`: This file, containing information about the simulation and instructions.
 
 ## How to Contribute
