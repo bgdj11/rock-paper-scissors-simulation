@@ -21,7 +21,7 @@ pygame.display.set_caption("ROCK PAPER SCISSORS SIMULATION")
 
 class Rock:
     def __init__(self):
-        self.image = pygame.image.load("rock.png")
+        self.image = pygame.image.load("Assets/rock.png")
         self.image = pygame.transform.scale(self.image, (60, 60))
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREEN_WIDTH - self.rect.width)
@@ -47,7 +47,7 @@ class Rock:
                 if isinstance(obj, Paper):
                     
                     self.__class__ = Paper
-                    self.image = pygame.image.load("paper.png")
+                    self.image = pygame.image.load("Assets/paper.png")
                     self.image = pygame.transform.scale(self.image, (60, 60))
                     self.dx = random.uniform(-1, 1) * SPEED_FACTOR
                     self.dy = random.uniform(-1, 1) * SPEED_FACTOR
@@ -58,7 +58,7 @@ class Rock:
 
 class Paper:
     def __init__(self):
-        self.image = pygame.image.load("paper.png")
+        self.image = pygame.image.load("Assets/paper.png")
         self.image = pygame.transform.scale(self.image, (60, 60))
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREEN_WIDTH - self.rect.width)
@@ -84,7 +84,7 @@ class Paper:
                 if isinstance(obj, Scissors):
                     
                     self.__class__ = Scissors
-                    self.image = pygame.image.load("scissors.png")
+                    self.image = pygame.image.load("Assets/scissors.png")
                     self.image = pygame.transform.scale(self.image, (60, 60))
                     self.dx = random.uniform(-1, 1) * SPEED_FACTOR
                     self.dy = random.uniform(-1, 1) * SPEED_FACTOR
@@ -95,7 +95,7 @@ class Paper:
 
 class Scissors:
     def __init__(self):
-        self.image = pygame.image.load("scissors.png")
+        self.image = pygame.image.load("Assets/scissors.png")
         self.image = pygame.transform.scale(self.image, (60, 60))
         self.rect = self.image.get_rect()
         self.rect.x = random.randint(0, SCREEN_WIDTH - self.rect.width)
@@ -121,7 +121,7 @@ class Scissors:
                 if isinstance(obj, Rock):
                     
                     self.__class__ = Rock
-                    self.image = pygame.image.load("rock.png")
+                    self.image = pygame.image.load("Assets/rock.png")
                     self.image = pygame.transform.scale(self.image, (60, 60))
                     self.dx = random.uniform(-1, 1) * SPEED_FACTOR
                     self.dy = random.uniform(-1, 1) * SPEED_FACTOR
